@@ -1,5 +1,5 @@
 <footer class="bg-accent/80">
-    <div class="container flex justify-center items-center p-6 gap-10 md:gap-20">
+    <div class="container flex justify-center items-center p-6 gap-12 md:gap-20">
         <div class="flex justify-center items-center gap-2 md:gap-6">
             <img src="{{ asset('img/logo.png') }}" alt="logo" class="w-16 md:w-24">
             <span class="text-white text-4xl md:text-5xl font-pattaya hover:text-accent-hover transition-all duration-500">Beeli</span>
