@@ -8,7 +8,7 @@
     <div class="flex flex-col">
         <div class="text-5xl font-bold">PROFILE</div>
     </div>
-    <div class="mt-5 md:mt-10 md:px-20 border-black border-2 rounded-lg p-10 gap-10 grid grid-cols-2">
+    <div class="mt-5 md:mt-10 md:px-20 border-black border-2 rounded-lg p-10 gap-12 grid grid-cols-2">
         <div class="flex flex-col col-span-2">
             <div class="text-3xl font-semibold">Name</div>
             <div class="text-xl">{{ session('student')->username }}</div>
@@ -23,11 +23,11 @@
         </div>
         <div class="flex flex-col col-span-2 md:col-span-1">
             <div class="text-3xl font-semibold">Password</div>
-            <div class="flex">
+            <div class="flex grid grid-cols-2">
                 <input
                 type="password"
                 id="passwordInput"
-                class="text-xl bg-transparent border-0 focus:outline-none w-2/3"
+                class="text-xl bg-transparent border-0 focus:outline-none cols-span-1"
                 value="{{ session('student')->password }}"
                 readonly
                 />
