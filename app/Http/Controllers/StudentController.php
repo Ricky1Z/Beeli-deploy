@@ -20,6 +20,18 @@ class StudentController extends Controller
     }
 
     public function register_personal(Request $request){
+
+        $request->validate([
+            'floating_username' => 'required',
+            'floating_email' => 'required|email',
+            'floating_password' => 'required',
+            'floating_phone' => 'required'
+        ]);
+
+        if(Student::where('email', "LIKE", $request->floating_email)->first()){
+            return redirect()->route('register_personal.view')->with('error', 'Email already exists');
+        }
+
         Student::create([
             'username' => $request->floating_username,
             'email' => $request->floating_email,

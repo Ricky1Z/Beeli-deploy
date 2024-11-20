@@ -1,6 +1,9 @@
 @extends('layouts.auth_master')
 
 @section('content')
+
+@include('components.toast')
+
 <div class="container flex flex-col mt-20 max-w-lg border border-dark p-10 rounded-md">
     <div class="">
         <span class="text-accent text-4xl font-pattaya hover:text-accent-hover transition-all duration-500">Beeli </span>
