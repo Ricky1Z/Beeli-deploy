@@ -1,4 +1,4 @@
-<div class="flex flex-col md:flex-row justify-between pt-3">
+<div class="flex flex-row justify-between pt-3">
     <div class="flex items-center gap-5">
         <img
             src="data:image/jpeg;base64,{{ base64_encode($detail->product->image) }}"
